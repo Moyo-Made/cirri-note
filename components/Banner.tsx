@@ -1,6 +1,28 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 const Banner = () => {
+	const [isVisible, setIsVisible] = useState(true);
+	const [lastScrollY, setLastScrollY] = useState(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY;
+			
+			if (currentScrollY === 0) {
+				setIsVisible(true);
+			} else if (currentScrollY > lastScrollY && currentScrollY > 50) {
+				setIsVisible(false);
+			}
+			
+			setLastScrollY(currentScrollY);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [lastScrollY]);
+
 	const content = (
 		<>
 			<span className="text-white">✦</span>
@@ -13,8 +35,10 @@ const Banner = () => {
 	);
 
 	return (
-		<div className="w-full flex justify-center font-manrope">
-			<div className="bg-[#166E4E] hidden lg:block lg:w-[1280px] h-[40px] relative overflow-hidden">
+		<div className="w-full flex justify-center font-manrope fixed top-0 left-0 right-0 z-50">
+			<div className={`bg-[#166E4E] hidden md:block md:w-[1280px] h-[40px] relative overflow-hidden transition-transform duration-300 ${
+				isVisible ? 'translate-y-0' : '-translate-y-full'
+			}`}>
 				{/* Fade gradients on left and right */}
 				<div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-[#166E4E] to-transparent z-10"></div>
 				<div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-[#166E4E] to-transparent z-10"></div>
