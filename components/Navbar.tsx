@@ -38,7 +38,7 @@ const Navbar = () => {
 				bannerVisible ? "translate-y-0" : "md:-translate-y-[40px]"
 			}`}
 		>
-			<div className="w-full flex justify-between md:justify-between items-center h-[64px] md:max-w-[1280px] md:h-[104px] md:py-6  px-4 sm:px-6 md:px-10 p-4 md:p-0 sticky backdrop-blur-2xl">
+			<div className="w-full flex justify-between md:justify-between items-center h-[64px] md:h-[104px] md:py-6  px-4 sm:px-6 md:px-10 p-4 md:p-0 sticky backdrop-blur-2xl">
 				<Image
 					src="/Logo.svg"
 					alt="CirriNote"
