@@ -34,11 +34,11 @@ const Navbar = () => {
 
 	return (
 		<div
-			className={`w-full flex justify-center font-manrope fixed top-0 md:top-[40px] left-0 right-0 z-40 transition-transform duration-300 ${
+			className={`w-full flex justify-center font-manrope fixed top-0 md:top-[40px] left-0 right-0 z-40 transition-transform duration-300 bg-[#0000007A] ${
 				bannerVisible ? "translate-y-0" : "md:-translate-y-[40px]"
 			}`}
 		>
-			<div className="flex justify-between md:justify-between items-center bg-[#0000007A] w-[390px] h-[64px] md:w-[1280px] md:h-[104px] md:py-6 md:px-10 p-4 md:p-0 sticky backdrop-blur-2xl">
+			<div className="w-full flex justify-between md:justify-between items-center h-[64px] md:max-w-[1280px] md:h-[104px] md:py-6  px-4 sm:px-6 md:px-10 p-4 md:p-0 sticky backdrop-blur-2xl">
 				<Image
 					src="/Logo.svg"
 					alt="CirriNote"
