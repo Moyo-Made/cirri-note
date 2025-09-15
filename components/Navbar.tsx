@@ -62,18 +62,29 @@ const Navbar = () => {
 				</div>
 
 				<div className="flex items-center gap-3 md:contents">
-					<button className="flex items-center justify-center bg-white backdrop-blur-[8px] rounded-full w-[107px] md:w-[157px] h-[32px] md:h-[56px] cursor-pointer">
-						<div className="bg-[#000000] w-[28px] h-[28px] md:w-[52px] md:h-[52px] rounded-full p-[6px] md:p-[14px] text-start ml-1">
+					<button
+						className="flex items-center justify-center bg-white backdrop-blur-[8px] rounded-full w-[107px] md:w-[157px] h-[32px] md:h-[56px] cursor-pointer group relative overflow-hidden 
+				hover:scale-110 md:hover:scale-100 transition-transform duration-300 ease-in-out origin-center"
+					>
+						{" "}
+						<div
+							className="bg-[#000000] w-[28px] h-[28px] md:w-[52px] md:h-[52px] rounded-full p-[6px] md:p-[14px] text-start 
+                group-hover:w-[calc(100%-5px)] group-hover:h-[calc(100%-5px)] group-hover:ml-0 group-hover:p-[6px] group-hover:md:p-[14px]
+                transition-all duration-300 ease-in-out absolute left-1 top-1/2 -translate-y-1/2 group-hover:left-0.5 group-hover:top-1/2 group-hover:-translate-y-1/2
+                flex items-center group-hover:rounded-full"
+						>
 							<Image
 								src="/cart.svg"
 								alt="Cart"
 								width={24}
 								height={24}
-								className="w-[18px] h-[19px] md:w-8 md:h-8 "
+								className="w-[18px] h-[19px] md:w-8 md:h-8 transition-all duration-300 ease-in-out group-hover:scale-110 ml-0"
 							/>
 						</div>
-						<div className="flex-1 flex justify-center items-center pr-[10px] md:pr-[20px]">
-							<span className="text-black text-sm md:text-lg">Try Now</span>
+						<div className="absolute inset-0 flex justify-center items-center pl-[10px] md:pl-10 z-10">
+							<span className="text-black text-sm md:text-lg group-hover:text-white transition-all duration-300 ease-in-out">
+								Try Now
+							</span>
 						</div>
 					</button>
 
