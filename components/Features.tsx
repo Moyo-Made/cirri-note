@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface FeatureCardProps {
@@ -10,9 +11,13 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 	title = "Feature Name",
 }) => (
 	<div
-		className={`bg-[#1C1C1C] rounded-2xl p-10 flex items-end w-[280px] h-[260px] lg:w-[388px] lg:h-[320px] ${className}`}
+		className={`bg-[#1C1C1C] hover:bg-transparent hover:border-2 hover:border-[#00BB77] border-2 border-transparent rounded-2xl p-12 flex flex-col justify-between transition-all duration-300 ease-in-out w-[280px] h-[260px] lg:w-[388px] lg:h-[320px] group ${className}`}
 	>
-		<span className="text-[#FFFFFFCC] text-3xl font-medium max-w-[112px]">
+		<div className="flex justify-end opacity-0 group-hover:opacity-100 transform -translate-x-16 translate-y-16 lg:-translate-x-32 lg:translate-y-32 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+			<Image src="/arrow.svg" alt="Arrow" width={87} height={87} />
+		</div>
+
+		<span className="text-[#FFFFFFCC] text-3xl font-medium max-w-[112px] transform -translate-x-1 translate-y-1 lg:-translate-x-2 lg:translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
 			{title}
 		</span>
 	</div>
@@ -28,7 +33,7 @@ const Features = () => {
 		{ id: 6, title: "Advanced Search" },
 	];
 	return (
-		<div className="w-full flex justify-center font-manrope bg-black">
+		<div className="w-full flex justify-center font-manrope bg-black relative z-20 min-h-screen">
 			<div className="w-full pt-24 md:pt-40 px-10">
 				<div className="flex flex-col space-y-4 ">
 					<div className="bg-[#00BB77] text-black text-sm font-medium flex justify-center items-center max-w-[122px] h-[30px] rounded-full">

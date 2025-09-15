@@ -28,7 +28,7 @@ const Creators = () => {
 	}, []);
 
 	return (
-		<div className="flex justify-center bg-black" ref={sectionRef}>
+		<div className="flex justify-center bg-black sticky top-0 z-10" ref={sectionRef}>
 			<div className="w-full bg-[#FFFFFF1A]">
 				<div className="w-full flex flex-col gap-16 justify-center items-center h-[610px] md:h-[900px] font-manrope">
 					<span

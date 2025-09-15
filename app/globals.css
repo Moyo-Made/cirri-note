@@ -122,3 +122,9 @@
 		opacity: 0;
 	}
 }
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+  }
+  
