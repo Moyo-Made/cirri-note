@@ -28,7 +28,7 @@ const Creators = () => {
 	}, []);
 
 	return (
-		<section id="about">
+		<div id="about">
 			<div
 				className="flex justify-center bg-black sticky top-0 z-10"
 				ref={sectionRef}
@@ -59,7 +59,7 @@ const Creators = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 
