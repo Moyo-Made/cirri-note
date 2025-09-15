@@ -65,18 +65,36 @@ const Features = () => {
 
 					{/* Desktop: Grid layout - hidden on mobile */}
 					<div className="hidden lg:contents">
-						<FeatureCard className="col-span-4 row-span-2 col-start-1 row-start-1" />
-						<FeatureCard className="col-span-4 row-span-2 col-start-9 row-start-1" />
-						<FeatureCard className="col-span-4 row-span-2 col-start-5 row-start-3" />
+						<FeatureCard
+							className="col-span-4 row-span-2 col-start-1 row-start-1"
+							title={featuresData[0].title}
+						/>
+						<FeatureCard
+							className="col-span-4 row-span-2 col-start-9 row-start-1"
+							title={featuresData[1].title}
+						/>
+						<FeatureCard
+							className="col-span-4 row-span-2 col-start-5 row-start-3"
+							title={featuresData[2].title}
+						/>
 						<div className="col-span-6 row-span-2 col-start-1 row-start-5 flex items-center max-w-[650px]">
 							<span className="text-4xl lg:text-5xl text-[#FFFFFF80] font-medium leading-tight pl-10">
 								Creative people worldwide rely on this app to craft ideas into{" "}
 								<span className="text-[#00BB77]">digital magic</span>.
 							</span>
 						</div>
-						<FeatureCard className="col-span-4 row-span-2 col-start-9 row-start-5" />
-						<FeatureCard className="col-span-4 row-span-2 col-start-1 row-start-7" />
-						<FeatureCard className="col-span-4 row-span-2 col-start-5 row-start-7" />
+						<FeatureCard
+							className="col-span-4 row-span-2 col-start-9 row-start-5"
+							title={featuresData[3].title}
+						/>
+						<FeatureCard
+							className="col-span-4 row-span-2 col-start-1 row-start-7"
+							title={featuresData[4].title}
+						/>
+						<FeatureCard
+							className="col-span-4 row-span-2 col-start-5 row-start-7"
+							title={featuresData[5].title}
+						/>
 					</div>
 
 					{/* Mobile: Text below cards */}
