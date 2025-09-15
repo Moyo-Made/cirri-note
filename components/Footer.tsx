@@ -12,13 +12,13 @@ const Footer = () => {
 							<Image src="/Logo.svg" alt="Logo" width={170} height={44} />
 
 							<div className="flex items-center gap-12 h-[32px]">
-								<Link href="/">
+								<Link href=" https://www.linkedin.com/company/creowis">
 									<Image src="/linkedin.svg" alt="ig" width={32} height={32} />
 								</Link>
 								<Link href="/">
 									<Image src="/ig.svg" alt="ig" width={32} height={32} />
 								</Link>
-								<Link href="/">
+								<Link href="https://x.com/creowistech">
 									<Image src="/x.svg" alt="ig" width={32} height={32} />
 								</Link>
 							</div>
