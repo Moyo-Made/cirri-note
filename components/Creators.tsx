@@ -28,8 +28,8 @@ const Creators = () => {
 	}, []);
 
 	return (
-		<div id="about">
 			<div
+			id="about"
 				className="flex justify-center bg-black sticky top-0 z-10"
 				ref={sectionRef}
 			>
@@ -59,7 +59,7 @@ const Creators = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+
 	);
 };
 
