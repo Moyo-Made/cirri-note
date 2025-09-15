@@ -39,6 +39,53 @@
 	}
 }
 
+@keyframes dropFromTop {
+	0% {
+		transform: translateY(-500px);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(25px);
+		opacity: 1;
+	}
+	60% {
+		transform: translateY(-12px);
+		opacity: 1;
+	}
+	80% {
+		transform: translateY(8px);
+	}
+	90% {
+		transform: translateY(-4px);
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes textFromLeft {
+	0% {
+		transform: translateX(-140px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes textFromRight {
+	0% {
+		transform: translateX(140px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
 @media (min-width: 768px) {
 	.animate-note-taking {
 		animation: slideDownFromCenter 1.2s ease-out forwards;
@@ -54,6 +101,23 @@
 
 	.animate-octopus {
 		animation: slideUpFromBottom 1.5s ease-out forwards;
+		animation-delay: 0.8s;
+		opacity: 0;
+	}
+
+	.animate-drop-in {
+		animation: dropFromTop 0.8s ease-in-out forwards;
+		opacity: 0;
+	}
+
+	.animate-text-left {
+		animation: textFromLeft 0.8s ease-out forwards;
+		animation-delay: 0.8s;
+		opacity: 0;
+	}
+
+	.animate-text-right {
+		animation: textFromRight 0.8s ease-out forwards;
 		animation-delay: 0.8s;
 		opacity: 0;
 	}
