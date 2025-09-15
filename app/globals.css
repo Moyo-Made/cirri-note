@@ -5,3 +5,56 @@
 		font-family: var(--font-manrope);
 	}
 }
+
+@keyframes slideDownFromCenter {
+	0% {
+		transform: translateX(140px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideDownFromCenterRight {
+	0% {
+		transform: translateX(-140px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideUpFromBottom {
+	0% {
+		transform: translateY(200px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.animate-note-taking {
+		animation: slideDownFromCenter 1.2s ease-out forwards;
+		animation-delay: 0.2s;
+		opacity: 0;
+	}
+
+	.animate-redefined {
+		animation: slideDownFromCenterRight 1.2s ease-out forwards;
+		animation-delay: 0.2s;
+		opacity: 0;
+	}
+
+	.animate-octopus {
+		animation: slideUpFromBottom 1.5s ease-out forwards;
+		animation-delay: 0.8s;
+		opacity: 0;
+	}
+}

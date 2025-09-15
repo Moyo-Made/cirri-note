@@ -26,11 +26,11 @@ const Hero = () => {
 						alt="Octopus"
 						width={1190}
 						height={725}
-						className="w-full h-full object-contain mt-12"
+						className="animate-octopus w-full h-full object-contain mt-12"
 					/>
 
 					<span
-						className="absolute md:left-[10%] lg:left-[5%] xl:left-[8%] top-1/3 -translate-y-1/2 text-white font-medium leading-tight
+						className="animate-note-taking absolute md:left-[10%] lg:left-[5%] xl:left-[8%] top-1/3 -translate-y-1/2 text-white font-medium leading-tight
 			text-4xl md:text-5xl lg:text-7xl
 			whitespace-nowrap"
 					>
@@ -38,7 +38,7 @@ const Hero = () => {
 					</span>
 
 					<span
-						className="absolute top-[47%] md:right-[12%] lg:right-[6%] xl:right-[9%] text-[#00BB77] font-medium
+						className="animate-redefined absolute top-[47%] md:right-[12%] lg:right-[6%] xl:right-[9%] text-[#00BB77] font-medium
 			text-4xl  md:text-5xl lg:text-7xl 
 			whitespace-nowrap"
 					>
@@ -47,14 +47,14 @@ const Hero = () => {
 				</div>
 			</div>
 
-			<div className="w-full absolute inset-0 md:hidden flex justify-end items-center font-manrope">
+			<div className="w-full absolute inset-0 md:hidden flex items-center font-manrope">
 				{" "}
 				<div className="relative">
-					<span className="absolute top-[50px] left-[43%] -translate-x-1/2 text-white text-5xl font-medium whitespace-nowrap">
+					<span className="absolute top-[40px] left-[43%] -translate-x-1/2 text-white text-5xl font-medium whitespace-nowrap">
 						Note Taking
 					</span>
 
-					<span className="absolute top-[90px] mt-1 left-[39.2%] -translate-x-1/2 text-[#00BB77] text-5xl font-medium whitespace-nowrap">
+					<span className="absolute top-[80px] mt-1 left-[39.2%] -translate-x-1/2 text-[#00BB77] text-5xl font-medium whitespace-nowrap">
 						Redefined
 					</span>
 
@@ -64,7 +64,8 @@ const Hero = () => {
 							alt="Octopus"
 							width={777}
 							height={473}
-							className="w-auto h-auto max-w-[777px] mt-[100px] ml-auto block"
+							className="w-auto h-auto max-w-[777px] mt-[170px] ml-auto block"
+							priority
 						/>
 					</div>
 				</div>
