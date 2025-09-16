@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
 	return (
 		<section id="contact">
-			<div className="bg-[#1C1C1C] relative z-10">
+			<div className="bg-[#1C1C1C] relative z-20">
 				<div className="bg-[#000000A3] border border-t-[#FFFFFF1A] h-[288px] px-10 py-20">
 					<div className="flex flex-col gap-10 md:gap-16">
 						<div className="flex flex-col gap-10 md:gap-0 md:items-center md:flex-row md:justify-between">

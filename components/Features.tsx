@@ -35,7 +35,7 @@ const Features = () => {
 	return (
 		<div
 			id="features"
-			className="w-full flex justify-center font-manrope bg-black relative z-20 min-h-screen"
+			className="w-full flex justify-center font-manrope bg-black relative z-30"
 		>
 			<div className="w-full pt-24 md:pt-40 px-10">
 				<div className="flex flex-col space-y-4 ">
