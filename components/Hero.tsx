@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<div className="flex justify-center items-center relative ">
+		<div id="hero" className="flex justify-center items-center relative ">
 			<div
 				className="hidden md:block w-full h-[900px] bg-cover bg-center bg-no-repeat"
 				style={{ backgroundImage: "url(/hero-bg.svg)" }}
