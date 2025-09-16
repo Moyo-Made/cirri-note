@@ -33,7 +33,10 @@ const Features = () => {
 		{ id: 6, title: "Advanced Search" },
 	];
 	return (
-		<div className="w-full flex justify-center font-manrope bg-black relative z-30 pb-20">
+		<div
+			id="features"
+			className="w-full flex justify-center font-manrope bg-black relative z-30 pb-20"
+		>
 			<div className="w-full pt-24 md:pt-40 px-10">
 				<div className="flex flex-col space-y-4 ">
 					<div className="bg-[#00BB77] text-black text-sm font-medium flex justify-center items-center max-w-[122px] h-[30px] rounded-full">

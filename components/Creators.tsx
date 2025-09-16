@@ -29,13 +29,16 @@ const Creators = () => {
 
 	return (
 		<div
-			className="flex justify-center bg-black sticky top-0 z-10"
+			id="about"
+			className="flex justify-center bg-black sticky top-0 z-10 min-h-[100vh]"
 			ref={sectionRef}
 		>
 			<div className="w-full bg-[#FFFFFF1A]">
-				<div className="w-full flex flex-col gap-16 justify-center items-center h-[610px] md:h-[900px] font-manrope">
+				<div className="w-full flex flex-col gap-8 md:gap-16 justify-center items-center h-[100vh] md:h-[900px] font-manrope px-4">
 					<span
-						className={`text-white font-medium text-2xl md:text-5xl md:leading-13 ${isVisible ? "animate-text-left" : "opacity-0"}`}
+						className={`text-white font-medium text-2xl md:text-5xl md:leading-13 ${
+							isVisible ? "animate-text-left" : "opacity-0"
+						}`}
 					>
 						An extraordinary note <br /> for{" "}
 						<span className="text-[#00BB77]">makers, creators..</span>
@@ -50,7 +53,9 @@ const Creators = () => {
 					/>
 
 					<span
-						className={`text-white font-medium text-xl text-center leading-7 max-w-[21.5rem] md:max-w-sm ${isVisible ? "animate-text-right" : "opacity-0"}`}
+						className={`text-white font-medium text-xl text-center leading-7 max-w-[21.5rem] md:max-w-sm ${
+							isVisible ? "animate-text-right" : "opacity-0"
+						}`}
 					>
 						Creators around the planet use this app for creating{" "}
 						<span className="text-[#00BB77]">magic</span>
