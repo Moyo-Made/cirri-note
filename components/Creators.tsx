@@ -36,7 +36,9 @@ const Creators = () => {
 			<div className="w-full bg-[#FFFFFF1A]">
 				<div className="w-full flex flex-col gap-16 justify-center items-center h-[610px] md:h-[900px] font-manrope">
 					<span
-						className={`text-white font-medium text-2xl md:text-5xl md:leading-13 ${isVisible ? "animate-text-left" : "opacity-0"}`}
+						className={`text-white font-medium text-2xl md:text-5xl md:leading-13 ${
+							isVisible ? "md:animate-text-left" : "opacity-0"
+						}`}
 					>
 						An extraordinary note <br /> for{" "}
 						<span className="text-[#00BB77]">makers, creators..</span>
@@ -47,11 +49,13 @@ const Creators = () => {
 						alt="Copy"
 						width={160}
 						height={160}
-						className={isVisible ? "animate-drop-in" : "opacity-0"}
+						className={isVisible ? "md:animate-drop-in" : "opacity-0"}
 					/>
 
 					<span
-						className={`text-white font-medium text-xl text-center leading-7 max-w-[21.5rem] md:max-w-sm ${isVisible ? "animate-text-right" : "opacity-0"}`}
+						className={`text-white font-medium text-xl text-center leading-7 max-w-[21.5rem] md:max-w-sm ${
+							isVisible ? "md:animate-text-right" : "opacity-0"
+						}`}
 					>
 						Creators around the planet use this app for creating{" "}
 						<span className="text-[#00BB77]">magic</span>
