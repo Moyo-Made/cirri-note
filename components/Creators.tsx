@@ -30,7 +30,7 @@ const Creators = () => {
 	return (
 		<div
 			id="about"
-			className="flex justify-center bg-black sticky top-0 z-10 transition-transform duration-500 ease-in"
+			className="flex justify-center bg-black md:sticky md:top-0 z-10 transition-transform duration-500 ease-in"
 		
 			ref={sectionRef}
 		>
