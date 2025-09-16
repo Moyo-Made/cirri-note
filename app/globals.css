@@ -127,11 +127,6 @@ html {
 	}
 }
 
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-}
-
 .mobile-menu-item-0 {
 	transition-delay: 0ms;
 }
